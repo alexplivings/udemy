@@ -15,4 +15,6 @@ func UseCount(s string) map[string]int {
 
 func Count(s string) int {
 	// write the code for this func
+	xs := strings.Fields(s)
+	return len(xs)
 }
