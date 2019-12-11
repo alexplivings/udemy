@@ -15,7 +15,7 @@ func init() {
 func main() {
 	stringBois := []string{"Hello", "you", "stupid", "person"}
 
-	err := tpl.ExecuteTemplate(os.Stdout, "basic.gohtml", stringBois)
+	err := tpl.ExecuteTemplate(os.Stdout, "with_index.gohtml", stringBois)
 	if err != nil {
 		log.Fatal(err)
 	}
